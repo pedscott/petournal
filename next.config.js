@@ -4,3 +4,12 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+module.exports = {
+  images: {
+    domain: [
+      "firebasestorage.googleapis.com",
+      "links.parareact.com",
+      "platform-lookaside.fbsbx.com",
+    ]
+  }
+}
