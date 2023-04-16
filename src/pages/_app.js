@@ -1,8 +1,6 @@
 import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
 
-
-export default function myApp({ Component, pageProps }: AppProps) {
+export default function myApp({ Component, pageProps }) {
   return (
     // <Provider session={pageProps.session}>
       <Component {...pageProps} />

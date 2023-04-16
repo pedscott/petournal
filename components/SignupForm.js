@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import bgImage from '/src/img/bg-image.png'
-import logoImage from '/src/img/logo-name.svg'
 
 function LoginForm() {
   return (

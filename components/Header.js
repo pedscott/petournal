@@ -3,12 +3,11 @@ import Image from 'next/image'
 import logo from '/src/img/logo-icon.png'
 import logoName from '/src/img/logo-name.png'
 import { 
-  SearchIcon, 
- } from '@heroicons/react/outline';
- 
- import { 
   AnnotationIcon,
-  BellIcon,
+  SearchIcon,
+  BellIcon, 
+ } from '@heroicons/react/outline'; 
+ import { 
   ChevronDownIcon,
  } from '@heroicons/react/solid';
  
@@ -28,7 +27,7 @@ function Header() {
           layout='fixed' 
         />
         <Image 
-          className='ml-2.5'
+          className='ml-3 flex'
           src={logoName} 
           alt="Petournal" 
           width={100} 
@@ -39,16 +38,18 @@ function Header() {
       </div>
       
       {/* Center */}
-      <div className='flex ml-2 items-center rounded-full bg-gray-100 p-2'>
-        <SearchIcon className='h-6 text-gray-500'/>
-        <input className='flex ml-2 bg-transparent outline-none  text-gray-500 flex-shrink'
-        type="text" placeholder="Tìm kiếm trên Petournal"></input>
+      <div className='hidden md:flex ml-2 items-center rounded-xl bg-gray-100 py-1.5 px-3'>
+        <SearchIcon className='h-4 ml-2 text-gray-500'/>
+        <input className=' flex ml-4 bg-transparent outline-none text-gray-500 flex-shrink'
+        type="text"  placeholder="Tìm kiếm"></input>
       </div>
 
       {/* Right */}
       <div className='flex items-center sm:space-x-2 justify-end'>
         
-        {/* Profile Picture */}  
+        {/* Profile Picture */}
+
+        {/* Notification & Messages  */}
         <p className='whitespace-nowrap font-semibold pr-3 pl-3'>Pedro Scott</p>    
         <AnnotationIcon className='icon'/>
         <BellIcon className='icon'/>

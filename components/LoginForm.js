@@ -52,9 +52,20 @@ function LoginForm() {
             <div className='mt-6 flex flex-col gap-y-4'>
               <button className='active:scale-[.98] active:duration-75 transition-all py-2.5 rounded-xl text-white bg-violet-500 text-lg font-bold'>Đăng nhập</button>
               
-              <button className='flex items-center justify-center gap-2 active:scale-[.98] active:duration-75 transition-all py-2.5 rounded-xl text-white bg-blue-600 text-lg font-bold'>
-                <svg width={24} height={24} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" fill="white"></path></svg>
-                Đăng nhập với Facebook
+               <button className='flex items-center border-2  border-violet-300 justify-center gap-3 active:scale-[.98] active:duration-75 transition-all py-2.5 rounded-xl text-violet-500 bg-white text-lg font-bold' >
+                <svg width={24} height={24} viewBox="0 0 48 48">
+                  <title>Google Logo</title>
+                  <clipPath id="g">
+                    <path d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/>
+                  </clipPath>
+                  <g class="colors" clip-path="url(#g)">
+                    <path fill="#FBBC05" d="M0 37V11l17 13z"/>
+                    <path fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"/>
+                    <path fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"/>
+                    <path fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"/>
+                  </g>
+                </svg>
+                Đăng nhập với Google
               </button>
             </div>
 
